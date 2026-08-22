@@ -1,0 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function getStockStatus(stock) {
+    if (stock === 0) {
+        return "Out of stock";
+    }
+    else if (stock >= 1 && stock <= 5) {
+        return "Almost Sold Out";
+    }
+    else if (stock >= 6 && stock <= 20) {
+        return "Available";
+    }
+    return "In Stock";
+}
+console.log(getStockStatus(0));
+console.log(getStockStatus(3));
+console.log(getStockStatus(10));
+console.log(getStockStatus(25));
+//# sourceMappingURL=problem2.js.map
